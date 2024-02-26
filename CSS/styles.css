@@ -365,7 +365,7 @@ h1{
    
    }
    .thankYou{
-       margin: auto;
+       margin: 0 auto;
        position: relative;
       text-align: center;
         display: none; 
