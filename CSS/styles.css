@@ -12,16 +12,19 @@ body{
     font-family: "Space Grotesk";
     
 }
-.flex{
+@media(min-width:960px){
+
+
+ .flex{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 .main-container{
   
    background-image: url(/images/bg-main-desktop.png); 
-   min-height: 100vh;
-   background-size: 25rem;   
-   background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+   
 
 }
  .frontCard{
@@ -32,15 +35,17 @@ body{
     
 } 
 .logo{
-    position: absolute;
+    position: fixed;
    width: 4rem;
-   top: 7rem;
-   left: 11.5rem;
+   left: 12rem;
+   z-index:1;
+   top: 5rem;
+  
   
 }
 .cardNumber{
     color:white;
-    position: relative;
+    position: absolute;
     top: 13rem;
     left: 12rem;
      letter-spacing: 0.3rem;
@@ -62,30 +67,43 @@ body{
 .cardName{
     color: white;
     text-transform: uppercase;
-    position: relative;
-    left: 11.5rem;
-    top: 15rem;
+    position: fixed;
+    left: 12rem;
+    top: 16rem;
+    z-index: 1;
+  
+    z-index: 1;
 }
 .cardValidity{
-    color: white;
-    position: relative;
-    left: 33rem;
-    top: 13.5rem;
+    color:white;
+    position: fixed;
+    left: 30rem;
+  top: 16rem;
+    z-index: 1;
 }
 .backCard{
     position: relative;
-    top: 9rem;
+    top: 11rem;
     left: 8rem;
     
 }
 .cardCvv{
-    color: white;
+    color:white;
     position: relative;
-    top: 0.6rem;
-    left: 30rem;
+    left: 38rem;
     z-index: 1;
+   top: 13.3rem;
+    
 
 }
+form{
+    margin-left: 10rem;
+    position: relative;
+    left: 10rem;
+   margin-top: 10rem;
+
+}
+
 
 .gridThree{
    display: flex;
@@ -98,17 +116,12 @@ body{
     width: 6.5rem;
     margin-left: 1rem;  
 }
-form{
-     margin-left: 10rem;
-     position: relative;
-     left: 10rem;
-    margin-top: 10rem;
- 
-}
+
 .container{
     display: flex;
     justify-content: space-between;
 }
+
 input{
      width: 100%;
      margin-right: 3rem;
@@ -163,7 +176,7 @@ label{
     margin-bottom: 2rem;
     color: hsl(279, 6%, 55%);
 }
-.thankYou button{
+#continueButton{
     padding: 1rem;
     background-color: hsl(278, 68%, 11%);
     color: white;
@@ -189,109 +202,200 @@ h1{
 
 
 }
+}
+
 
 .attribution {
      font-size: 11px; 
      text-align: center;
-     margin-top: 2rem;
+     margin-bottom: 1rem;
  }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);  
 }
 
-@media(max-width:960px){
+@media only screen and (max-width:960px){
     .flex{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-       
+        display: flex; 
+        flex-direction: column;     
+        overflow-x: hidden;
+        overflow-y: hidden;
         
         
     }
      .main-container{
       background-image: url(/images/bg-main-mobile.png);
-      background-size: 40rem;
+      background-size: cover;
       
-     
     }  
      aside{
-        padding: 3rem;
-        position: relative;
-        left: -15rem;
-        top: -25rem;
-        padding-left: 5rem;
-       
-        
+       margin-top: 10rem;
+        max-width: 30rem; 
+       padding: 0 2rem;
+        margin: 8rem auto;
+      
+   
     }
+    
      .backCard{
-        position:absolute;
-        left: 1.5rem;
-        top:3.6rem;
-        max-width: 25rem;
+        max-width: 22rem;
+        position: relative;
+        top: 7.2rem;
+        left: 3rem;
+       
+     
+       
     } 
-     .frontCard{
-         position: absolute;
-        left: -1.6rem;
-        top: 15rem; 
-        z-index: 1;
-        max-width: 25rem;
-        padding-left: 2rem;
+      .frontCard{
+        max-width: 22rem;
+        position: relative;
+        top: 4rem;
+        left: 1.2rem; 
+       
     
     } 
-    .cardCvv{
-       position: absolute;
-       top: 9.7rem;
-       left: 22rem;
+     .cardCvv{
+       position: relative;
+      color: white;
+       left: 23rem;
+       bottom: 9.5rem;
        
     }
 
     .cardName{
         color:white;
-        position: absolute;
-        z-index: 1;
-        top: 25rem;
-        left: 2rem;
+        position: relative;
+        top: 8rem;
         font-size: 0.9rem;
+        z-index: 1;
 
     }
     .cardNumber{
         color: white;
         font-size: 1.5rem;
-        position: absolute;
-        top:22rem;
-        z-index: 1000;
-        left: 1.3rem;
+        position: relative;
+        top:29rem; 
+        left: 3rem;
+        z-index: 1;
+        letter-spacing: 0.2rem;
     }
     .cardValidity{
-        color: white;
+        color:white;
         margin-left: rem;
-        position: absolute;
-        top: 25rem;
-        z-index:1;
-        left: 20rem;
+        position: relative;
+        top: 7rem;
+        z-index: 1;
+        left: 16rem;
         font-size: 0.9rem;
     }
     .logo{
         z-index: 1;
-        position: absolute;
-        left: 2rem;
-        top: 16rem; 
+        position: relative;
+        left: rem;
+        top: 2rem; 
+        max-width: 4rem;
     }
     .two{
         margin-left: 0.5rem;
-    }
-    
-    .thankYou{
-        position: relative;
-         top: -20rem;
-        left: 1rem;
-    }
-    .attribution{
-        position: relative;
-        bottom: 31rem;
     } 
-
-}
-
-
- 
+    
+    .gridThree{
+        display: flex;
+     }
+     .month{
+         width: 6.5rem;
+     
+     }
+     .year{
+         width: 6.5rem;
+         margin-left: 1rem;  
+     }
+     
+     .container{
+         display: flex;
+         justify-content: space-between;
+     }
+     input{
+        width: 100%;
+        margin-right: 3rem;
+       margin-top: 0.5rem;
+       margin-bottom: 0.5rem;
+       padding: 0.8rem;
+       border-radius: 0.4rem;
+       border: 1px solid lightgray;
+       cursor: pointer;
+       font-weight: 500;
+        
+   }
+   input:focus{
+       border: 1px solid hsl(249, 99%, 64%) ;
+   }
+   
+   .errorMessage{
+       color:red;
+       font-size: 0.7rem;
+       margin-bottom: 1rem;
+       
+   }
+   label{
+       color: hsl(278, 68%, 11%);
+       font-size: 0.8rem;
+       letter-spacing: 0.1rem;
+       font-weight: 500;
+   }
+   ::placeholder{
+       font-weight: 500;
+       font-size: 1rem;
+       letter-spacing: 0.1rem;
+       
+   }
+   .cardNo{
+       margin-top: 1rem;
+   
+   }
+   .thankYou{
+       margin: auto;
+       position: relative;
+      text-align: center;
+        display: none; 
+        top: 5rem;     
+   }
+   .thankYou img{
+       margin-bottom: 1rem;
+       
+   }
+   .thankYou p{
+       margin-top: 1rem ;
+       margin-bottom: 2rem;
+       color: hsl(279, 6%, 55%);
+   }
+   .thankYou button{
+       padding: 1rem;
+       background-color: hsl(278, 68%, 11%);
+       color: white;
+       border-radius: 0.3rem;
+       font-weight: 500;
+       font-size: 1.2rem;
+       cursor: pointer;
+       width: 30rem;
+       margin-bottom: 5rem;
+   }
+   h1{
+       color: hsl(278, 68%, 11%);
+       font-size: 2.5rem;
+   }
+   #confirmButton{
+       padding: 1rem;
+       width: 100%;
+       background-color: hsl(278, 68%, 11%);
+       color: white;
+       border-radius: 0.3rem;
+       font-weight: 500;
+       font-size: 1.2rem;
+       cursor: pointer;
+   
+   
+   }
+   }
+   
+     
