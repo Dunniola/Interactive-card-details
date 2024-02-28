@@ -215,6 +215,7 @@ h1{
 }
 .main-container{
     background-image: url(/images/bg-main-mobile.png);
+    background-size: cover;
      
     
     
@@ -241,6 +242,7 @@ h1{
    max-width: 21rem;
    left: 0.9rem;
    bottom: 8.3rem;
+   border-radius: 0.6rem;
    
 }
 
