@@ -210,6 +210,7 @@ h1{
     gap: 2rem;
     overflow: hidden;
     
+    
   
 }
 .main-container{
@@ -225,7 +226,7 @@ h1{
    top: 10rem;
     left: 5rem; 
    z-index: 1;
-   max-width: 23rem;
+   max-width: 22rem;
    margin: 0 2rem;
    
     
@@ -235,17 +236,17 @@ h1{
 .backCard{
    position: relative;
    margin: 1.3rem auto;
-   max-width: 23rem;
-   left: 0.4rem;
-   bottom: 7.5rem;
+   max-width: 21rem;
+   left: 0.9rem;
+   bottom: 8.3rem;
    
 }
 
 
 .logo{
 max-width: 4rem;
-    position: absolute;
-    top: 13rem;
+    position: relative;
+    top: -3rem;
     left: 2rem;
 
 
@@ -253,9 +254,10 @@ max-width: 4rem;
 .cardName{
     color: white;
     position: relative;
-    top: 10rem;
+    top: 8rem;
     left: -4rem;
     font-size: 0.8rem;
+    color:white;
 }
 .cardNumber{
     color: white;
@@ -268,22 +270,21 @@ max-width: 4rem;
 .cardValidity{
     color: white;
     position:relative ;
-    top: 10rem;
+    top: 8rem;
     left: -7rem;
     font-size: 0.8rem;
 }
 .cardCvv{
 color: white;
 position: absolute;
-bottom: 30.8rem;
+bottom: 31rem;
 left: 22rem;
 font-size: 0.8rem;
 }
+
 form{
-  
-  position: relative;
-  
-  padding:2rem;
+  padding:1rem;
+  margin-top: 5rem;
     
 }
 
