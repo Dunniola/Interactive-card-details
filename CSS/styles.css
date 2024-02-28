@@ -213,7 +213,7 @@ h1{
   
 }
 .containerOne{
-    background-image: url(/images/bg-main-mobile.png);
+    background-color:hsl(278, 68%, 11%);
     height:50vh;
    
    
@@ -237,7 +237,7 @@ h1{
    top: -17.7rem;
    margin: 1.3rem auto;
    max-width: 23rem;
-   left: 1.1rem;
+   left: 0.4rem;
    
 }
 
@@ -245,7 +245,7 @@ h1{
 .logo{
 max-width: 4rem;
     position: absolute;
-    top: 12rem;
+    top: 13rem;
     left: 2rem;
 
 
@@ -255,32 +255,35 @@ max-width: 4rem;
     position: relative;
     top: -11rem;
     left: -4rem;
+    font-size: 0.8rem;
 }
 .cardNumber{
     color: white;
     position: relative;
     top: -16rem;
     left: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    
 }
 .cardValidity{
     color: white;
-    position: relative;
+    position:relative ;
     top: -11rem;
     left: -7rem;
+    font-size: 0.8rem;
 }
 .cardCvv{
-    color: white;
-   top: 9rem;
-   left: 24rem;
-     z-index: 1; 
-    position: fixed;
+color: white;
+position: absolute;
+bottom: 30.8rem;
+left: 22rem;
+font-size: 0.8rem;
 }
 form{
   
   position: relative;
   top:-32rem ;
-  padding: 1rem;
+  padding:3rem;
     
 }
 .thankYou{
