@@ -215,7 +215,9 @@ h1{
 }
 .main-container{
     background-image: url(/images/bg-main-mobile.png);
-    height:50vh;
+     
+    
+    
    
    
     
@@ -284,7 +286,7 @@ font-size: 0.8rem;
 
 form{
   padding:1rem;
-  margin-top: 5rem;
+  
     
 }
 
