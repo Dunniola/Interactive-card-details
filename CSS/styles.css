@@ -212,8 +212,8 @@ h1{
     
   
 }
-.containerOne{
-    background-color:hsl(278, 68%, 11%);
+.main-container{
+    background-image: url(/images/bg-main-mobile.png);
     height:50vh;
    
    
@@ -222,7 +222,7 @@ h1{
 }
 .frontCard{
    position: relative;
-   top: -10rem;
+   top: 10rem;
     left: 5rem; 
    z-index: 1;
    max-width: 23rem;
@@ -234,10 +234,10 @@ h1{
 }
 .backCard{
    position: relative;
-   top: -17.7rem;
    margin: 1.3rem auto;
    max-width: 23rem;
    left: 0.4rem;
+   bottom: 7.5rem;
    
 }
 
@@ -253,14 +253,14 @@ max-width: 4rem;
 .cardName{
     color: white;
     position: relative;
-    top: -11rem;
+    top: 10rem;
     left: -4rem;
     font-size: 0.8rem;
 }
 .cardNumber{
     color: white;
     position: relative;
-    top: -16rem;
+    top: 5rem;
     left: 1.5rem;
     font-size: 1.2rem;
     
@@ -268,7 +268,7 @@ max-width: 4rem;
 .cardValidity{
     color: white;
     position:relative ;
-    top: -11rem;
+    top: 10rem;
     left: -7rem;
     font-size: 0.8rem;
 }
@@ -282,17 +282,11 @@ font-size: 0.8rem;
 form{
   
   position: relative;
-  top:-32rem ;
-  padding:3rem;
+  
+  padding:2rem;
     
 }
-.thankYou{
-    position: relative;
-    top: -35rem;
-}
-.attribution{
-    position: relative;
-    top: -32rem;
-}
+
+
 
 }
